@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(184, 34, 34);
+  height: 1000px;
+}
+header {
+  background-color: white;
+  border-bottom: 1px soid gray;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 115em;
+}
+nav {
+  display: flex;
+  margin: 0px 24px;
+  height: 60px;
+  width: 115rem;
+  background-color: white;
+}
+.header-first-flex {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 5px;
+}
+.header-second-flex {
+  display: flex;
+}
+.Half-life {
+    display: flex;
+  background: radial-gradient(circle, gray, white, gray);
+  height: 40px;
+  width: 50px;
+  word-wrap:break-word;
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+  box-sizing:border-box;
+ 
+}
+.Half-life a{
+    word-wrap:break-word;
+}
+.Half-life:hover {
+  background: radial-gradient(ellipse, rgb(4, 233, 4), rgb(17, 187, 17), green);
+}
+.header-first-flex div:first-child a {
+  text-decoration: none;
+}
+.Half-life a:hover {
+  color: #2cfa1f;
+}
+.search-bar-combination {
+  display: block;
+  margin-left: 15px;
+  width: 240px;
+  height: 40px;
+  background-color: rgba(189, 184, 184, 0.103);
+  border-radius: 100px;
+}
+.search-bar-combination div {
+  display: flex;
+  align-items: center;
+}
+.search-bar-combination input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: rgba(189, 184, 184, 0.048);
+  cursor: text;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 100px;
+}
+.search-bar-combination input:focus {
+  border: none;
+  outline: none;
+}
+.write{
+    display: flex;
+    width: 90px;
+}
+.header-second-flex{
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+.write div:first-child{
+     margin-right: 8px;
+}
+.write div:last-child{
+    color: gray;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.signup p:nth-child(1){
+    background-color: rgb(75, 132, 243);
+    box-sizing: content-box;
+    padding: 7px 12px;
+    padding-top: 9px;
+    border: 1px;
+    border-radius: 100px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin-right: 11px;
+}
+.signup p:nth-child(2){
+    font-family: Helvetica;
+    font-size: 13.5px;
+    color: gray;
+}
+.user-button{
+    display: flex;
+    border-radius: 50%;
+    width: 48px;
+    height: 32px;
+    appearance: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.user-button div{
+    height: 32px;
+    width: 32px;
+    background-image: url('Screenshot_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+.user-button i{
+    filter: grayscale(100%);
+    transform: translateX(5px);
+}
+.header-second-flex div{
+    cursor:pointer;
+}

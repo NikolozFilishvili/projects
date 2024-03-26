@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lancelot;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url('stable-diffusion-xl_clipdrop-enhance.jpg');
+    background-size: cover;
+    background-position: 0px -150px;
+    border: 15px black ridge;
+    box-sizing: border-box;
+    justify-content: center;
+    overflow: hidden;
+}
+main{
+    background-color: black;
+    height: 376px;
+    width: 368px;
+    align-self: center;
+    position: relative;
+    top: 23px;
+    border-radius: 50%;
+
+}
+.spinner{
+    background-image: url("stable-diffusion-xl_clipdrop-enhance.jpg");
+    background-position: -520px -332px;
+    background-size: 1400px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: spin 5s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.spinner button{
+    color: white;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+@keyframes spin{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+header{
+    width: 530px;
+    height: 530px;
+    background-image: url("stable-diffusion-xl_clipdrop-enhance.jpg");
+    border-radius: 50%;
+    position: relative;
+    align-self: center;
+    top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: -460px -252px;
+    background-size: 1450px;
+    animation: secondspinner 10s infinite;
+}
+@keyframes secondspinner {
+    from {transform: rotateZ(360deg);}
+    to {transform: rotateZ(0deg);}
+}

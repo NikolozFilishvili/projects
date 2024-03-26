@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    position: relative;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(0deg, #005384 -45%, rgb(0, 0, 0) 70%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 2s linear;
+   
+}
+header:hover::before {
+    opacity: 1;
+}
+
+main{
+    background-image: url('ryunosuke-kikuno-zE-MrTmjzd4-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #005384;
+}
+  .fading-line {
+    width: 100%;  
+    height: 5.0px;
+    position: absolute;
+    background: linear-gradient(to right, transparent 0%, white 20%, white 80%, transparent 100%); 
+  }
+.div2{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 5px;
+    background: linear-gradient(to right, transparent 0%, white 20%, white 80%, transparent 100%);
+}

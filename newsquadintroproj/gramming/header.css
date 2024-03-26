@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    position: relative;
+    height: 100px;
+    background-color: black; /* Fallback color */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: background-color 5s linear; /* For the fallback color */
+    justify-content: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: black; /* Initial background */
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 5s linear;
+}
+
+header:hover::before {
+    background: linear-gradient(0deg, #005384 -45%, rgb(0, 0, 0) 70%);
+    opacity: 0; /* Fully show the gradient on hover */
+}
+
+header h3 {
+    color: #90D6C0; /* Initial color */
+    font-size: 170%; /* Initial font size */
+    transition: color 1s linear, font-size 1s linear, word-spacing 1s ease, letter-spacing 1.2s linear;
+}
+
+header:hover h3 {
+    color: #21e7a9; /* Hover color */
+    font-size: 200%; /* Hover font size */
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+/* under this transition I want a lil "(the best)" under it to show how my squad is the best, here is an example "Filo's squad : (the best )" */
