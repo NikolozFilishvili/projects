@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+  header {
+    position: relative;
+    height: 100px;
+    background-color: black; /* Fallback color */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: background-color 5s linear; /* For the fallback color */
+    justify-content: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: black; /* Initial background */
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 5s linear;
+}
+
+header:hover::before {
+    background: linear-gradient(0deg, #005384 -45%, rgb(0, 0, 0) 70%);
+    opacity: 0; /* Fully show the gradient on hover */
+}
+
+header h3 {
+    color: #90D6C0; /* Initial color */
+    font-size: 170%; /* Initial font size */
+    transition: color 1s linear, font-size 1s linear, word-spacing 1s ease, letter-spacing 1.2s linear;
+}
+
+header:hover h3 {
+    color: #21e7a9; /* Hover color */
+    font-size: 200%; /* Hover font size */
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+/* under this transition I want a lil "(the best)" under it to show how my squad is the best, here is an example "Filo's squad : (the best )" */
+
+body{
+    background-color: #005384;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    border: white 3px outset;
+}
+.outer{
+    border: white 1px solid;
+    height: 25rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+    
+}
+.placeholder{
+    background-color: rgb(8, 4, 4);
+    height: 20rem;
+    width: 30rem;
+    color: white;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 30rem;
+    margin-top: 20px;
+}
+.buttons button:nth-child(1){
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+.buttons button:nth-child(2){
+    background-color: black;
+    color: white;
+    width: 50px;
+}
+main h1{
+    border: whitesmoke 1px solid;
+    padding: 2rem 4rem;
+    background-color: black;
+    color: white;
+}
+.fading-line {
+    width: 100%;  
+    height: 5.0px;
+    position: absolute;
+    background: linear-gradient(to right, transparent 0%, white 20%, white 80%, transparent 100%); 
+    transform: translate(0px,88px);
+  }
+.fading-line2{
+    width: 100%;  
+    height: 5.0px;
+    position: absolute;
+    background: linear-gradient(to right, transparent 0%, white 20%, white 80%, transparent 100%); 
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: translateY(8rem);
+    width: 15.0rem;
+}
+footer a{
+    border: black 1px outset;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
